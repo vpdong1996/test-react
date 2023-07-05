@@ -9,6 +9,10 @@ buildscript {
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.hasProperty("kotlinVersion") ? rootProject.ext.kotlinVersion : KOTLIN_VERSION}"
     }
+
+    repositories {
+        mavenCentral()
+    }
 }
 
 plugins {
